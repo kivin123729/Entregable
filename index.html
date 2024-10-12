@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprame.PE</title>
+    
+    <!-- Aquí se agrega el favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3594/3594363.png" type="image/x-icon"> <!-- Cambia esta URL por la de tu ícono -->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            position: relative;
+            background-image: url('https://png.pngtree.com/background/20220714/original/pngtree-simple-wind-white-background-wavy-streamline-line-background-picture-image_1621027.jpg'); /* Aquí va el link de tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Hace que la imagen de fondo sea fija al hacer scroll */
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 40px;
+            font-weight: bold;
+            display: flex;
+            align-items: center; /* Alinea verticalmente el ícono y el texto */
+        }
+
+        h1 img {
+            width: 50px; /* Ajusta el tamaño del ícono */
+            height: 50px; /* Ajusta el tamaño del ícono */
+            margin-right: 10px; /* Espacio entre el ícono y el texto */
+        }
+
+        .icon-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .icon {
+            text-align: center;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: #f2f2f2;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.3s; /* Añadido para animar el color de fondo */
+            cursor: pointer;
+            text-decoration: none; /* Quita el subrayado azul */
+        }
+
+        .icon img {
+            width: 60px;
+            height: 60px;
+            margin-top: 20px;
+        }
+
+        .icon p {
+            margin-top: 10px;
+            font-size: 19px; /* Aumentar el tamaño de la fuente */
+            color: #333;
+            font-family: Arial, sans-serif; /* Mismo tipo de letra que el título */
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
+        }
+
+        .icon:hover:nth-child(1) {
+            background-color: rgba(255, 255, 255, 0.5); /* Color blanco */
+        }
+
+        .icon:hover:nth-child(2) {
+            background-color: rgba(0, 255, 255, 0.5); /* Color celeste */
+        }
+
+        .icon:hover:nth-child(3) {
+            background-color: rgba(0, 0, 255, 0.5); /* Color azul */
+        }
+
+        .icon:hover:nth-child(4) {
+            background-color: rgba(255, 0, 0, 0.5); /* Color rojo */
+        }
+
+        .icon:hover:nth-child(5) {
+            background-color: rgba(0, 255, 0, 0.5); /* Color verde */
+        }
+
+        .icon:hover:nth-child(6) {
+            background-color: rgba(128, 128, 128, 0.5); /* Color gris */
+        }
+
+        .credits {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 24px; /* Aumentar el tamaño de la fuente de los créditos */
+            color: #333;
+            font-family: Arial, sans-serif; /* Mismo tipo de letra que el título */
+        }
+
+        .social-media {
+            position: absolute;
+            bottom: 50px; /* Ajusta la distancia desde la parte inferior */
+            left: 10px; /* Ajusta la distancia desde la izquierda */
+            font-size: 20px; /* Tamaño de fuente para las redes sociales */
+            color: #333;
+            font-family: Arial, sans-serif; /* Mismo tipo de letra que el título */
+            text-align: left;
+        }
+
+        .social-media a {
+            margin-right: 10px; /* Espacio entre los iconos */
+            color: #333; /* Color de los iconos */
+            text-decoration: none; /* Quita el subrayado */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/3594/3594363.png" alt="Icono"> <!-- Cambia la URL por la de tu ícono -->
+        Comprame.PE
+    </h1> <!-- Título grande y decorado -->
+
+    <div class="icon-container">
+        <a href="celulares.html" class="icon">
+            <img src="https://1.bp.blogspot.com/-Uj7Cga8B2fI/WysXE3yNRtI/AAAAAAAASeE/OGA1jG-wyzYKe5oJ_ss0aNuDdR53AcrSACLcBGAs/s1600/9.png" alt="Celulares">
+            <p>Celulares</p>
+        </a>
+
+        <a href="smartwatches.html" class="icon">
+            <img src="https://www.pngmart.com/files/13/Smartwatch-PNG-Photos.png" alt="Smartwatches">
+            <p>Smartwatches</p>
+        </a>
+
+        <a href="computo.html" class="icon">
+            <img src="https://pngimg.com/uploads/computer_pc/computer_pc_PNG102095.png" alt="Cómputo">
+            <p>Cómputo</p>
+        </a>
+
+        <a href="mundo-gamer.html" class="icon">
+            <img src="https://online-shop.lucasgirard.com/wp-content/uploads/2021/03/pc_gamer-removebg-preview.png" alt="Mundo Gamer">
+            <p>Mundo Gamer</p>
+        </a>
+
+        <a href="videojuegos.html" class="icon">
+            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1474648205i/20628192.png" alt="Videojuegos">
+            <p>Videojuegos</p>
+        </a>
+
+        <a href="sillas-gamer.html" class="icon">
+            <img src="https://gamerscolombia.com/img/Silla-Gamer-JR-SGJR-RGB-NEGRA/img_4339__1606231152.png" alt="Sillas Gamer">
+            <p>Sillas Gamer</p>
+        </a>
+    </div>
+
+    <div class="social-media">
+        <p>Síguenos en Redes Sociales</p>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+
+    <div class="credits">
+        © 2024 Comprame.PE - by Kivin
+    </div>
+
+</body>
+</html>
+
+
+

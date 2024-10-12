@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sillas Gamer - Comprame.PE</title>
+    
+    <!-- Aquí se agrega el favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3594/3594363.png" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            position: relative;
+            background-image: url('https://png.pngtree.com/background/20220714/original/pngtree-simple-wind-white-background-wavy-streamline-line-background-picture-image_1621027.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            width: 200px; /* Ajusta el ancho del producto */
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            cursor: pointer; /* Cambia el cursor al pasar sobre el producto */
+        }
+
+        .product img {
+            width: 100%;
+            height: auto; /* Mantiene la proporción de la imagen */
+            border-radius: 10px;
+        }
+
+        .product p {
+            margin-top: 10px;
+            font-size: 18px; /* Aumenta el tamaño de la fuente */
+            color: #333;
+        }
+
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #555; /* Cambia el color al pasar el ratón */
+        }
+
+        /* Estilos para el modal */
+        .modal {
+            display: none; /* Ocultamos el modal por defecto */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            border-radius: 10px;
+        }
+
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sillas Gamer</h1>
+
+    <div class="product-list">
+        <div class="product" onclick="openModal('modal1')">
+            <img src="https://www.gamerscolombia.com/img/products/Silla-DXRacer-F-SERIES-FORMULA-P132-black-white/DXRacer-Formula-P132-MUGCDXR100516587862431.jpg" alt="Silla Gamer DXRacer">
+            <p>Silla Gamer DXRacer</p>
+        </div>
+        <div class="product" onclick="openModal('modal2')">
+            <img src="https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/3617/PMP20000390290/full_image-1.jpeg" alt="Silla Gamer Gamer Pink Hibari">
+            <p>Silla Gamer Gamer Pink Hibari</p>
+        </div>
+        <div class="product" onclick="openModal('modal3')">
+            <img src="https://spacegamer.com.ar/img/Public/1058-producto-silla-gamer-gxt-707-resto-4-5063.jpg" alt="Silla Gamer Trust Gaming GXT 707 Raion">
+            <p>Silla Gamer Trust Gaming GXT 707 Raion</p>
+        </div>
+    </div>
+
+    <a href="index.html" class="back-button">Volver a la Página Principal</a>
+
+    <!-- Modal para la Silla Gamer DXRacer -->
+    <div id="modal1" class="modal">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <img class="modal-content" src="https://www.gamerscolombia.com/img/products/Silla-DXRacer-F-SERIES-FORMULA-P132-black-white/DXRacer-Formula-P132-MUGCDXR100516587862431.jpg" alt="Silla Gamer DXRacer">
+    </div>
+
+    <!-- Modal para la Silla Gamer Gamer Pink Hibari -->
+    <div id="modal2" class="modal">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <img class="modal-content" src="https://rimage.ripley.com.pe/home.ripley/Attachment/MKP/3617/PMP20000390290/full_image-1.jpeg" alt="Silla Gamer Gamer Pink Hibari">
+    </div>
+
+    <!-- Modal para la Silla Gamer Trust Gaming GXT 707 Raion -->
+    <div id="modal3" class="modal">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <img class="modal-content" src="https://spacegamer.com.ar/img/Public/1058-producto-silla-gamer-gxt-707-resto-4-5063.jpg" alt="Silla Gamer Trust Gaming GXT 707 Raion">
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "flex"; // Muestra el modal
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none"; // Oculta el modal
+        }
+
+        // Cierra el modal si se hace clic fuera de la imagen
+        window.onclick = function(event) {
+            if (event.target.className === "modal") {
+                closeModal(event.target.id);
+            }
+        }
+    </script>
+
+</body>
+</html>
